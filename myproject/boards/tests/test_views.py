@@ -1,11 +1,10 @@
 from django.urls import reverse
 from django.urls import resolve
 from django.test import TestCase
-from .views import home, board_topics
 from django.contrib.auth.models import User
-from .views import new_topic
-from .models import Board, Topic, Post
-from .forms import NewTopicForm
+from ..views import home, board_topics, new_topic
+from ..models import Board, Topic, Post
+from ..forms import NewTopicForm
 
 class HomeTests(TestCase):
     def test_home_view_status_code(self):
