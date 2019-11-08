@@ -1,0 +1,14 @@
+language: python
+python: 3.8
+before_install:
+- sudo apt-get update -q && sudo apt-get install nodejs -yqq
+- sudo apt-get install libpq-dev -yqq
+- python -V
+install:
+- pip install -r requirements.txt
+
+script:
+- git remote add lab https://gamer4life1:9b6Nox_CzaC47UJ2ryvT@gitlab.com/gamer4life1/simple-rest-api.git
+- git push lab master
+
+
