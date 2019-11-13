@@ -50,3 +50,6 @@ test:
   script:
     - cd myproject
     - python manage.py test
+    - npm install -g snyk
+    - snyk auth $SNYK_TOKEN
+    - snyk test
