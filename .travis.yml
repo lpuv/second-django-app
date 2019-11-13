@@ -11,7 +11,5 @@ script:
 - snyk auth $SNYK_TOKEN
 - snyk test
 - git init
-# - git add .
-# - git commit -m "Auto push"
 - git remote add lab https://l-bot:1yfM4rwxUz4kx5szA6yV@gitlab.com/gamer4life1/second-django-app.git
 - git push lab master
