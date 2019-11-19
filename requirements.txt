@@ -3,3 +3,4 @@ django-widget-tweaks==1.4.5
 pytz==2019.3
 sqlparse==0.3.0
 virtualenvwrapper==4.8.4
+schedule
