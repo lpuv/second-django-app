@@ -1,0 +1,16 @@
+name: Caching Dependencies
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+
+    - name: Cache Deps
+      id: cache-deps
+      uses: actions/cache@v1
+      with:
+        path: deps
+        key: ${{ runner.os }}-deps
