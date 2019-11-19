@@ -64,9 +64,9 @@ pytest:
 snyk:
   image: node:latest
   script:
-    - sudo add-apt-repository ppa:jonathonf/python-3.8
-    - sudo apt-get update
-    - sudo apt-get install python3.8
+    - add-apt-repository ppa:jonathonf/python-3.8
+    - apt-get update
+    - apt-get install python3.8
     - npm install -g snyk
     - snyk auth $SNYK_TOKEN
     - snyk test --command=python3.8
