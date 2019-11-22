@@ -10,6 +10,12 @@ script:
 - npm install -g snyk
 - snyk auth $SNYK_TOKEN
 - snyk test
-- git init
+- cd myproject
+- coverage run manage.py test
+- coverage xml
+- mv coverage.xml ../
+- cd ../
+- python-codacy-coverage -r coverage.xml -t CODACY_PROJECT_TOKEN
 - git remote add lab https://l-bot:1yfM4rwxUz4kx5szA6yV@gitlab.com/gamer4life1/second-django-app.git
+- git pull lab master
 - git push lab master
