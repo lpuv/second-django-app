@@ -32,7 +32,7 @@ pipeline {
   
               # create snakemake-workflows env
               conda init bash
-              conda env create -f envs/snakemake-workflows.yaml
+              conda create -n env python=3
               '''
          }
       }
@@ -40,8 +40,7 @@ pipeline {
               steps {
                   sh '''#!/usr/bin/env bash
                   source $WORKSPACE/miniconda/etc/profile.d/conda.sh
-                  conda activate miniconda/envs/snakemake-workflows/
-                  snakemake -s workflows/download_fastq/Snakefile --directory workflows/download_fastq -n -j 48 --quiet
+                  conda activate miniconda/envs/env/
                   '''
               }
           }
