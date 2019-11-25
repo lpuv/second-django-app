@@ -13,7 +13,7 @@ pipeline {
      PATH = "$WORKSPACE/miniconda/bin:$PATH"
   }
 
-  timestamps {
+  //timestamps {
     stages {
       stage('setup miniconda') {
           steps {
@@ -77,5 +77,5 @@ pipeline {
           }
       }
   }
-}
+//}
 
