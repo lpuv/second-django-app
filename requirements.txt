@@ -5,7 +5,7 @@ Django==3.0
 django-widget-tweaks==1.4.5
 idna==2.8
 packaging==20.0
-py==1.8.0
+py==1.8.1
 pyparsing==2.4.5
 pytest==5.3.1
 pytz==2019.3
