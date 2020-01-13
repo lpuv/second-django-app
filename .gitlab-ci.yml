@@ -64,6 +64,7 @@ pytest:
 snyk:
   image: node:latest
   script:
+    - sudo apt-get install software-properties-common
     - add-apt-repository ppa:jonathonf/python-3.8
     - apt-get update
     - apt-get install python3.8
