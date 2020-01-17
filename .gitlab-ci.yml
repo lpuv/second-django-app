@@ -66,7 +66,7 @@ snyk:
   script:
     - apt-get update
     - apt-get install -y software-properties-common
-    - sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+    - apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
     - apt-get update
     - wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tgz
     - tar -xf Python-3.8.0.tgz
