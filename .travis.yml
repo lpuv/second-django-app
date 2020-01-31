@@ -10,12 +10,9 @@ script:
 - npm install -g snyk
 - snyk auth $SNYK_TOKEN
 - snyk test
-# - cd myproject
-# - coverage run manage.py test
-# - coverage xml
-# - mv coverage.xml ../
-# - cd ../
-# - python-codacy-coverage -r coverage.xml -t CODACY_PROJECT_TOKEN
 - git remote add lab https://l-bot:1yfM4rwxUz4kx5szA6yV@gitlab.com/gamer4life1/second-django-app.git
 - git pull lab master
 - git push lab master
+notifications:
+  slack:
+    secure: VHwbPJ9jIJRRhK3nDZzcwXdvn1Lg0j16kwXd+cNuYaV9VupJwLepzCarpwcbxvitDwhmdHsclIahYlEpbIKTJ9mAmGTaXMz9q4Hu+Rm6rW6VW1PymGyWSkm4ZXG3EpUyZy7yAD1btAD6sUgbbJFi/izw0HcYWjNwRVXuN/H/+NAXadODgjOP7Mu0J0ul4lV62+MrXvdRNv6vEgRZP+ltXGlbStAfRTLmHkF5XIM/cOYcFm/LsgikAr3zDiUJHNnbYbwYBMLIJ21NxhfMJ84n+dg3rC+migEzlVaXvEI1L88fU9pt788RoAs3Sv1m621BAIckrQR64W34Ck3Nhfv3+Msbyyvas4+KHQPs1GAVSDsXRLOKJCzGTzjGy8FQ8eLf1VtkmEMjQk0C/wjo1ZR6upjQ7mf7gWjqgTmO6PpYxQ5JevjP7MtqCoOkK3UWcjmH3CwrIV1B38WBhXB18SJgNbx2MkIB/GDrKeJnRdFjbNGr1yoZMa6Yerim0vtQPg/AIlaMF5A/Vga0qmk4Jdc6HCuVXXzJcJK5mdotKlWF+b7+M5x2BvfTqWkew0oCGzouaKM3zey2Vo0O9fHMz1NGvyUShM4tjvXdBKFB5/NUnsQ/CSZ4ydJ7Lg0Bsk0PuXbnCi4WhxiFPSrDYzanvQ/ABKi5Rm1346WXFXnstYgnyaM=
