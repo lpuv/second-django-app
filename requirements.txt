@@ -4,7 +4,7 @@ coverage==5.0.3
 Django==3.0.3
 django-widget-tweaks==1.4.5
 idna==2.8
-packaging==20.0
+packaging==20.9
 py==1.8.1
 pyparsing==2.4.6
 pytest==5.3.1
