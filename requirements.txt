@@ -10,6 +10,6 @@ pyparsing==2.4.6
 pytest==5.3.1
 pytz==2019.3
 requests==2.22.0
-sqlparse==0.3.0
+sqlparse==0.4.2
 urllib3==1.25.7
 virtualenvwrapper==4.8.4
